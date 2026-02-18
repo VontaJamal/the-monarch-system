@@ -145,11 +145,13 @@ These are the core of the system. Random quests about agentic orchestration — 
 
 ## 📢 Public Output Rules
 
-### Agentic Orchestration Quests
-**ALWAYS public.** Every quest about agent orchestration must produce something the world can see. This is how you become a recognized expert.
+### All Quests Are Public
 
-### Repo Quests
-**Sometimes public.** The System randomly tags repo quests with `[PUBLIC]` to maintain visibility pressure. Not every repo quest needs public output, but enough do to keep you producing.
+Every quest is `[PUBLIC]` because every quest is based on work you already did. The System scans your git history, finds the impressive stuff you shipped, and the quest is: **tell the world about it.**
+
+You already did the hard part. The System just tells you to stop being humble about it.
+
+This means there's no "extra work" for public output — the code is shipped, the features are built. The quest is just the visibility layer on top of reality.
 
 ### Valid Public Outputs
 - X/Twitter post or thread
