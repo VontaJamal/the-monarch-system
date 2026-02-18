@@ -50,7 +50,7 @@ Mac (gets state updates for visibility, but doesn't run anything)
 ## Runtime Integration
 
 ### How It Runs Today (v0 — OpenClaw Cron)
-Currently The System runs as an OpenClaw cron job:
+Currently Shadow Gate runs as an OpenClaw cron job:
 - **Cron ID:** `c1506444-9235-4bc9-b951-9e124b0dc26e`
 - **Schedule:** 6:00 AM ET daily
 - **Type:** Isolated `agentTurn` — spins up a Sonnet agent that reads `leveling.json`, generates quests, delivers to Telegram
@@ -64,7 +64,7 @@ The goal is to replace the cron-driven AI generation with actual code:
 │           Windows Server (24/7)              │
 │                                              │
 │  ┌──────────────┐    ┌───────────────────┐  │
-│  │  The System   │    │   leveling.json   │  │
+│  │  Shadow Gate  │    │   leveling.json   │  │
 │  │  (Node/Python)│───→│   (live state)    │  │
 │  │               │    └───────────────────┘  │
 │  │  - Quest Gen  │                           │

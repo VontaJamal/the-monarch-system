@@ -1,6 +1,6 @@
 # ⚔️ Shadow Gate — Solo Leveling Quest Engine for Agent Monarchs
 
-A gamified productivity and accountability system inspired by Solo Leveling, built for agentic orchestration mastery. The System delivers daily quests, tracks XP, enforces punishments, and forces public output — because becoming an expert happens in the public eye or not at all.
+A gamified productivity and accountability system inspired by Solo Leveling, built for agentic orchestration mastery. Shadow Gate delivers daily quests, tracks XP, enforces punishments, and forces public output — because becoming an expert happens in the public eye or not at all.
 
 ## 🎯 What It Does
 
@@ -148,9 +148,9 @@ These are the core of the system. Random quests about agentic orchestration — 
 
 ### All Quests Are Public
 
-Every quest is `[PUBLIC]` because every quest is based on work you already did. The System scans your git history, finds the impressive stuff you shipped, and the quest is: **tell the world about it.**
+Every quest is `[PUBLIC]` because every quest is based on work you already did. Shadow Gate scans your git history, finds the impressive stuff you shipped, and the quest is: **tell the world about it.**
 
-You already did the hard part. The System just tells you to stop being humble about it.
+You already did the hard part. Shadow Gate just tells you to stop being humble about it.
 
 This means there's no "extra work" for public output — the code is shipped, the features are built. The quest is just the visibility layer on top of reality.
 
@@ -183,7 +183,7 @@ Quests tagged `[PUBLIC]` are **NOT marked complete** until a link or proof of th
 | Streak | Consecutive weeks shipped |
 
 ### Escalation
-- **Thursday+** with no weekly output → The System issues URGENT warnings
+- **Thursday+** with no weekly output → Shadow Gate issues URGENT warnings
 - **Sunday 11 PM** missed → **Gate of Steins** punishment activates
 
 ---
@@ -240,7 +240,7 @@ XP: 0/100 | Streak: 0 days
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 Failure to complete will result in punishment.
-The System does not negotiate.
+Shadow Gate does not negotiate.
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 ```
 
