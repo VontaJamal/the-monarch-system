@@ -360,9 +360,35 @@ No warmth. No "you got this." No emojis beyond ⚔️🔔⚠️. Pure mechanical
 - **Shadow Army** — sub-agents that auto-complete E-rank quests (delegated work still counts)
 - **Dungeon events** — random high-XP challenges that appear mid-day
 - **Achievement system** — badges for milestones (first S-rank quest, 30-day streak, etc.)
-- **Dashboard** — visual level progression, XP graphs, streak calendar
 - **API** — REST endpoints for quest management, completion, and stats
 - **Discord/Telegram bot** — interactive quest completion with button confirmations
+
+---
+
+## 📊 Shadow Gate Dashboard (Planned)
+
+A visual dashboard to track progression over time. This is a real build requirement, not a nice-to-have.
+
+### Core Views
+- **Level & Rank progression** — visual timeline showing rank-ups over weeks/months
+- **XP graph** — daily/weekly XP earned over time, cumulative and per-session
+- **Streak calendar** — GitHub-contribution-style heatmap of active days
+- **Quest completion rate** — % of quests cleared per day/week, trends over time
+- **Project health** — per-project neglect tracking, which repos are getting love vs. neglected
+- **Public output log** — timeline of all [PUBLIC] outputs with links
+- **Punishment history** — when they happened and why (accountability)
+
+### Advanced Views
+- **Per-project XP breakdown** — which projects generate the most XP
+- **Quest difficulty distribution** — are you doing mostly E-rank or pushing into A/S?
+- **Weekly/monthly reports** — auto-generated summaries of progress
+- **Milestone tracker** — next rank, next streak bonus, weekly output deadline countdown
+
+### Tech
+- Web dashboard (Next.js or standalone)
+- Reads from `leveling.json` history array
+- Could be hosted alongside the quest engine or as a separate app
+- Mobile-friendly — check your stats from your phone
 
 ---
 
