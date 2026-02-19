@@ -1,4 +1,4 @@
-# ⚔️ Shadowgate — Solo Leveling Quest Engine for Agent Monarchs
+# ⚔️ Shadowgate — Solo Leveling Quest Engine
 
 A gamified productivity and accountability system inspired by Solo Leveling, built for agentic orchestration mastery. Shadowgate delivers daily quests, tracks XP, enforces punishments, and forces public output — because becoming an expert happens in the public eye or not at all.
 
