@@ -81,8 +81,8 @@
     },
     "RinsharUI": {
       "emoji": "🎨",
-      "description": "Rinshari UI design system",
-      "repoPath": "D:\\Code Repos\\synclink\\design\\rinshari-ui",
+      "description": "Rinshari Eye design system",
+      "repoPath": "D:\\Code Repos\\synclink\\design\\rinshari-eye",
       "questsPerDay": 1,
       "priority": "low",
       "lastQuestDate": null,

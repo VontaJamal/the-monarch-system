@@ -109,7 +109,7 @@ Each project is tracked with priority levels and neglect windows.
   },
   "RinsharUI": {
     "emoji": "🎨",
-    "description": "Rinshari UI design system",
+    "description": "Rinshari Eye design system",
     "priority": "low",
     "maxNeglectDays": 7
   }
