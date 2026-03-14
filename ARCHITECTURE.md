@@ -15,11 +15,11 @@ Shadowgate is a gamified quest engine that runs 24/7 on a Windows server, orches
 
 ### Production (Windows Server)
 - **Purpose:** 24/7 runtime — quest delivery, state tracking, XP management
-- **Host:** `192.168.1.188` (DESKTOP-B4BL6NG)
+- **Host:** `your-server` (YOUR-HOST)
 - **User:** `devon` (runs as Administrator)
-- **SSH:** `ssh -i ~/.ssh/id_ed25519 devon@192.168.1.188`
+- **SSH:** `ssh -i ~/.ssh/id_ed25519 user@your-server`
 - **Repo clone location:** `D:\Code Repos\the-system\` (or similar)
-- **State file:** `C:\Users\Devon\.openclaw\workspace\memory\leveling.json` (the LIVE player state)
+- **State file:** `~\.openclaw\workspace\memory\leveling.json` (the LIVE player state)
 - **Always running.** This machine never sleeps. It's Raya's body.
 
 ### Sync Flow
@@ -41,7 +41,7 @@ Mac (gets state updates for visibility, but doesn't run anything)
 | What | Where | Why |
 |------|-------|-----|
 | Source code | GitHub repo | Version controlled, developed on Mac |
-| `leveling.json` (live state) | Windows: `C:\Users\Devon\.openclaw\workspace\memory\leveling.json` | This is the LIVE player state. XP, streaks, quest history. Windows is source of truth. |
+| `leveling.json` (live state) | Windows: `~\.openclaw\workspace\memory\leveling.json` | This is the LIVE player state. XP, streaks, quest history. Windows is source of truth. |
 | Config/templates | GitHub repo | Quest templates, rank definitions, punishment lists — part of the codebase |
 | Runtime logs | Windows | Quest delivery logs, error logs, audit trail |
 
@@ -54,7 +54,7 @@ Currently Shadowgate runs as an OpenClaw cron job:
 - **Cron ID:** `c1506444-9235-4bc9-b951-9e124b0dc26e`
 - **Schedule:** 6:00 AM ET daily
 - **Type:** Isolated `agentTurn` — spins up a Sonnet agent that reads `leveling.json`, generates quests, delivers to Telegram
-- **Delivery:** Telegram group `-5290373854` (Raya HQ)
+- **Delivery:** Telegram group `YOUR_CHAT_ID` (Raya HQ)
 
 ### Target Architecture (v1 — Standalone Engine)
 The goal is to replace the cron-driven AI generation with actual code:
@@ -143,7 +143,7 @@ the-system/
 - Logs to `D:\Code Repos\the-system\logs\`
 
 ### File Paths
-- State file: `C:\Users\Devon\.openclaw\workspace\memory\leveling.json`
+- State file: `~\.openclaw\workspace\memory\leveling.json`
 - The code should accept a `--state-path` flag or `STATE_PATH` env var so it's not hardcoded
 - Default can point to the OpenClaw workspace path
 
@@ -154,7 +154,7 @@ the-system/
 - Weekly deadline: Sunday 11 PM ET
 
 ### Git Monitoring
-- Repos are on `D:\Code Repos\` and `C:\Users\Devon\.openclaw\workspace\`
+- Repos are on `D:\Code Repos\` and `~\.openclaw\workspace\`
 - Git monitor should watch these paths for new commits
 - On commit detected → check if it satisfies any open quest → auto-complete if match
 
@@ -162,9 +162,9 @@ the-system/
 
 ```env
 # Required
-STATE_PATH=C:\Users\Devon\.openclaw\workspace\memory\leveling.json
+STATE_PATH=~\.openclaw\workspace\memory\leveling.json
 TELEGRAM_BOT_TOKEN=<from OpenClaw config or separate>
-TELEGRAM_CHAT_ID=-5290373854
+TELEGRAM_CHAT_ID=YOUR_CHAT_ID
 
 # Optional
 TIMEZONE=America/New_York
